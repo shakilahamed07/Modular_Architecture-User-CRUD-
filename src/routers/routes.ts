@@ -1,5 +1,6 @@
 import type { Router } from "express";
 import express from "express";
+import userRouter from "../modules/user/user.routes.js";
 
 
 const router:Router = express.Router();
@@ -7,7 +8,7 @@ const router:Router = express.Router();
 const moduleRoutes = [
     {
         path: "/user",
-        route: ()=>{},
+        route: userRouter,
     },
 ]
 
