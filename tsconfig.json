@@ -7,5 +7,5 @@
     "strict": true,
     "verbatimModuleSyntax": true
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "src/modules/user/user.validation.ts"]
 }

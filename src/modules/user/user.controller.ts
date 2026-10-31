@@ -4,8 +4,8 @@ import userService from "./user.service.js";
 import status from "http-status";
 
 const createUser =  catchAsync(async(req, res, next) =>{
-    const newUser = req.body;
-    const result = await userService.createUser(newUser);
+    
+    const result = await userService.createUser(req.body);
 
     sendResponse(res, {
         statusCode: status.OK,
